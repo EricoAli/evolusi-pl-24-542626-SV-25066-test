@@ -67,7 +67,7 @@ jobs:
       - name: Deploy to staging
         run: echo "Deploying application to staging..."
 
-    production:
+  production:
     name: Production
     needs: staging
     runs-on: ubuntu-latest
