@@ -2,6 +2,8 @@
 
 set -e
 
+# Trigger ulang workflow untuk verifikasi CI/CD
+
 # 1. Aktifkan maintenance mode
 php artisan down --retry=60
 
@@ -24,3 +26,4 @@ php artisan queue:restart
 
 # 7. Buka kembali aplikasi
 php artisan up
+
